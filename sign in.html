@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Registration</title> 
+    <style>
+        body{
+            background: url("1.jpg");
+        }
+        form{
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 350px;
+            width: 400px;
+            border-radius: 5px;
+            opacity: 0.75;
+            border: 2px solid #e2e2e2;
+            margin: 0 auto;
+            background: #fff;
+            padding: 10px;
+        }
+        
+        h1{
+            color: #333;
+            font-family: 'open-sans', sans-serif;
+        }
+        
+        input[type=text]{
+            margin-top: 10px;
+            height: 30px;
+            width: 100%; 
+            border-radius: 3px;
+            text-align: center;
+        }
+        
+        input[type=email]{
+            margin-top: 10px;
+            height: 30px;
+            width: 100%; 
+            border-radius: 3px;
+            text-align: center;
+        }
+        
+        input[type=password]{
+            margin-top: 10px;
+            height: 30px;
+            width: 100%; 
+            border-radius: 3px;
+            text-align: center;
+        }
+        
+        button{
+            margin-top: 20px;
+            cursor: pointer;
+            height: 30px;
+            width: 100%;
+            background: #333;
+            color: #fff;
+            border-radius: 3px;
+        }
+        
+        span{
+            position: relative;
+            top: 15px;
+        }
+        #footer {
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+    
+<body>
+    <form>
+        <h1>Sign in</h1>
+        <input type="text" placeholder="Name"required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password"required>
+        <span><p><input type="checkbox" required>I have read and understood <a href="https://www.website.com/terms-and-conditions/">Terms and Conditions</a></p></span>
+        <button>Submit</button>
+        <span>If you dont have account ? <a href="#">Sign Up</a></span>
+    </form>
+    <div id="footer">
+        <h4>Designed By <strong>Yash Kumar Arora</strong></h4>
+    </div>
+</body>
+</html>
