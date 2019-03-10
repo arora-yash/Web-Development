@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Humanised Number</title>
+  </head>
+  <body>
+    <input type="number" name="num" value="" id="num" placeholder="Enter the number to be humanized">
+    <input type="button" name="submit" value="Submit" onclick="fun()">
+  </body>
+  <script type="text/javascript">
+    function fun() {
+      var num = document.getElementById('num').value;
+
+        var temp = num.toString();//number converted to string
+        var final_string="";
+        var temp_len = temp.length-1;
+
+        if(temp[temp_len]==1)
+          final_string=temp+"st";
+
+        if(temp[temp_len]==2)
+          final_string=temp+"nd";
+
+        if(temp[temp_len]==3)
+          final_string=temp+"rd";
+
+        else
+          final_string=temp+"th";
+
+        console.log(final_string)
+    }
+  </script>
+</html>
