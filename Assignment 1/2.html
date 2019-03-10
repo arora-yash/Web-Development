@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Insert String</title>
+  </head>
+  <body>
+    <input type="text" name="textField1" value="" id="textField1" placeholder="Enter the main String">
+    <input type="text" name="textField2" value="" id="textField2" placeholder="Enter the SubString to be Added">
+    <input type="number" name="pos" value="" id="pos" placeholder="Enter the position">
+    <input type="button" name="submit" value="Submit" onclick="fun()">
+  </body>
+  <script type="text/javascript">
+    function fun() {
+      var str1 = document.getElementById('textField1').value;
+      var str2 = document.getElementById('textField2').value;
+      var num = document.getElementById('pos').value;
+
+      if(!num)
+        num = 1;
+
+      var output = str1.substr(0,num) + str2 + str1.substr(num);
+      console.log(output);
+    }
+  </script>
+</html>
