@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>String Chop</title>
+  </head>
+  <script type="text/javascript">
+    function fun() {
+      var str = document.getElementById('textField2').value;
+      var num = document.getElementById('num').value;
+
+      if(!num)
+        num = str.length;
+
+      console.log(str.match(new RegExp('.{1,' + num + '}', 'g')));
+
+      // /.{1,num}/g
+    }
+  </script>
+  <body>
+    <input type="text" name="textField2" value="" id="textField2" placeholder="Enter the String">
+    <input type="number" name="num" value="" id="num" placeholder="Enter the number to chop">
+    <input type="button" name="submit" value="Submit" onclick="fun()">
+  </body>
+</html>
