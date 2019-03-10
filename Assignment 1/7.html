@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Printing the first Elements of the array</title>
+  </head>
+  <script type="text/javascript">
+    var first =  function(array, n) {
+      if (array == null)
+        return void 0;
+      if (n == null)
+        return array[0];
+      if (n < 0)
+        return [];
+      return array.slice(0, n);
+    };
+
+    console.log(first([7, 9, 0, -2]));
+  </script>
+  <body>
+
+  </body>
+</html>
