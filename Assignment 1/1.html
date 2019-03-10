@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Repeat String N times</title>
+  </head>
+  <body>
+    <input type="text" name="textField" value="" id="textField">
+    <input type="number" name="rep" value="" id="rep">
+    <input type="button" name="submit" value="Submit" onclick="fun()">
+  </body>
+  <script type="text/javascript">
+    function fun() {
+      var str = document.getElementById('textField').value;
+      var num = document.getElementById('rep').value;
+
+      if(!num)
+        num = 1;
+
+      console.log(str.repeat(num));
+    }
+  </script>
+</html>
