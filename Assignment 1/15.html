@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leap Year</title>
+  </head>
+  <script type="text/javascript">
+    function fun() {
+      var year = document.getElementById('year').value;
+      console.log((year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0));
+    }
+  </script>
+  <body>
+    <input type="number" name="year" value="" id="year">
+    <input type="button" name="submit" value="Submit" onclick="fun()">
+  </body>
+</html>
