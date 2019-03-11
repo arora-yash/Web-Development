@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Display the current date</title>
+  </head>
+  <script type="text/javascript">
+    var d = new Date();
+
+    var dd = d.getDate();
+    var mm = d.getMonth()+1;
+    var yy = d.getFullYear();
+    if(dd<10)
+      dd = "0"+dd;
+    if(mm<10)
+      mm = "0"+mm;
+    console.log(dd+"/"+mm+"/"+yy);
+  </script>
+  <body>
+
+  </body>
+</html>
